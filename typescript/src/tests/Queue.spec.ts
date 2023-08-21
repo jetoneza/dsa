@@ -27,4 +27,16 @@ describe("Queue", () => {
     expect(queue.length).toBe(1);
     expect(queue.peek()).toBe(3);
   });
+
+  it("should handle empty", () => {
+    const q = new Queue();
+
+    expect(q.peek()).toBe(undefined);
+    expect(q.length).toBe(0);
+
+    const val = q.deque();
+
+    expect(val).toBe(undefined);
+    expect(q.length).toBe(0);
+  });
 });
