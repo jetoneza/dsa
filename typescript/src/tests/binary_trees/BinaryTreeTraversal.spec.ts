@@ -2,7 +2,7 @@ import in_order_search from "../../data_structures/binary_trees/InOrderTree";
 import post_order_search from "../../data_structures/binary_trees/PostOrderTree";
 import pre_order_search from "../../data_structures/binary_trees/PreOrderTree";
 
-const tree = {
+export const tree = {
   value: 50,
   left: {
     value: 21,
