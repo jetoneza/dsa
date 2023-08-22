@@ -9,7 +9,7 @@ describe(DoublyLinkedList, () => {
     list.append(1);
     list.append(2);
     list.append(3);
-
+    
     // List: [1, 2, 3]
 
     expect(list.length).toBe(3);

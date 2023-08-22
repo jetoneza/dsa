@@ -14,6 +14,16 @@ class DoublyLinkedList<T> {
     this.head = this.tail = undefined;
   }
 
+  debug() {
+    let out = "";
+    let curr = this.head;
+    for (let i = 0; curr && i < this.length; ++i) {
+      out += `(${i}: ${curr.value}) => `;
+      curr = curr.next;
+    }
+    console.log(out);
+  }
+
   prepend(item: T): void {
     const node = {
       value: item,
