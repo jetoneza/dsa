@@ -1,9 +1,3 @@
-export type BinaryNode<T> = {
-  value: T;
-  left?: BinaryNode<T>;
-  right?: BinaryNode<T>;
-};
-
 function pre_order_search(root: BinaryNode<number>): number[] {
   return walk([], root);
 }

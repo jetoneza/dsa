@@ -1,5 +1,3 @@
-import { BinaryNode } from "./PreOrderTree";
-
 function post_order_search(root: BinaryNode<number>): number[] {
   return walk([], root);
 }

@@ -1,9 +1,3 @@
-type ListNode<T> = {
-  value: T;
-  next?: ListNode<T>;
-  prev?: ListNode<T>;
-};
-
 class DoublyLinkedList<T> {
   public length: number;
   private head?: ListNode<T>;

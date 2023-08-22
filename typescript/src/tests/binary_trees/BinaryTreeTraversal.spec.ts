@@ -1,8 +1,6 @@
 import in_order_search from "../../data_structures/binary_trees/InOrderTree";
 import post_order_search from "../../data_structures/binary_trees/PostOrderTree";
-import pre_order_search, {
-  BinaryNode,
-} from "../../data_structures/binary_trees/PreOrderTree";
+import pre_order_search from "../../data_structures/binary_trees/PreOrderTree";
 
 const tree = {
   value: 50,
