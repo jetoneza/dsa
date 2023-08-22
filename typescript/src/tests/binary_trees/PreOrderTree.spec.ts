@@ -1,8 +1,9 @@
+import in_order_search from "../../data_structures/binary_trees/InOrderTree";
 import pre_order_search, {
   BinaryNode,
 } from "../../data_structures/binary_trees/PreOrderTree";
 
-const head = {
+const tree = {
   value: 50,
   left: {
     value: 21,
@@ -48,10 +49,16 @@ const head = {
   },
 } as BinaryNode<number>;
 
-describe(pre_order_search, () => {
-  it("should traverse", () => {
-    const nums = pre_order_search(head);
+describe("Binary tree traversal", () => {
+  it(`should traverse in pre order`, () => {
+    const path = pre_order_search(tree);
 
-    expect(nums).toEqual([50, 21, 11, 9, 1, 4, 2, 3, 32, 13, 7, 6, 8, 5, 2]);
+    expect(path).toEqual([50, 21, 11, 9, 1, 4, 2, 3, 32, 13, 7, 6, 8, 5, 2]);
+  });
+
+  it(`should traverse in in order`, () => {
+    const path = in_order_search(tree);
+
+    expect(path).toEqual([9, 11, 1, 21, 2, 4, 3, 50, 7, 13, 6, 32, 5, 8, 2]);
   });
 });
