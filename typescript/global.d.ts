@@ -19,3 +19,5 @@ declare type BinaryNode<T> = {
   left?: BinaryNode<T>;
   right?: BinaryNode<T>;
 };
+
+declare type WeightedAdjacencyMatrix = number[][];
