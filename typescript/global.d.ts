@@ -20,4 +20,6 @@ declare type BinaryNode<T> = {
   right?: BinaryNode<T>;
 };
 
+declare type GraphEdge = { to: number; weight: number };
+declare type WeightedAdjacencyList = GraphEdge[][];
 declare type WeightedAdjacencyMatrix = number[][];
