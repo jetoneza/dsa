@@ -2,11 +2,11 @@ import dfs from "../../data_structures/graphs/DFSGraphList";
 
 export const list: WeightedAdjacencyList = [];
 
-//     >(1)<--->(4) ---->(5)
-//    /          |       /|
-// (0)     ------|------- |
-//    \   v      v        v
-//     >(2) --> (3) <----(6)
+//      (1) --- (4) ---- (5)
+//    /  |       |       /|
+// (0)   | ------|------- |
+//    \  |/      |        |
+//      (2) --- (3) ---- (6)
 list[0] = [
   { to: 1, weight: 3 },
   { to: 2, weight: 1 },
