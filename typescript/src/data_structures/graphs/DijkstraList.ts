@@ -62,3 +62,12 @@ export default function dijkstra_list(
   out.push(source);
   return out.reverse();
 }
+
+export function dijkstra_list_min_heap(
+  source: number,
+  sink: number,
+  arr: WeightedAdjacencyList
+): number[] {
+  // TODO: Implement using a min heap when getting the lowest unvisited vertex
+  return [];
+}
