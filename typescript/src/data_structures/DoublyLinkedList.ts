@@ -144,6 +144,10 @@ class DoublyLinkedList<T> {
   }
 
   private getAt(idx: number): ListNode<T> | undefined {
+    if (idx < 0 || idx >= this.length) {
+      throw new Error("Out of bounds.");
+    }
+
     if (idx == 0) {
       return this.head;
     }
